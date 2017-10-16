@@ -1,0 +1,25 @@
+val list  = List("alpha","gamma","omega","geta","beta")
+
+task 1 :( find count of all strings with length 4)
+
+list.count(s=>s.length==4)
+
+--------------------------------------------------------
+Task 2: (convert the list of string to a list of integers, where each string is mapped to its corresponding length)
+
+list.filter(s=>s.length==4)
+list.map((s)=>(s,s.length))
+
+--------------------------------------------------------
+
+Task 3 : (find count of all strings which contain alphabet ‘m’) 
+
+list.count(s=>s.contains("m"))
+
+--------------------------------------------------------
+
+Task 4 : (find the count of all strings which start with the alphabet ‘a’)
+
+
+list.count(s=>s.startsWith("a"));
+
